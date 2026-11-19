@@ -1,0 +1,52 @@
+{
+  "comparison_advantage_established": false,
+  "independent_validation": false,
+  "real_grid_validation": false,
+  "run_A": {
+    "API_parameters_available": false,
+    "exact_provider_backend_version_verified": false,
+    "formatted_verdict_transcript_received": true,
+    "full_provenance_complete": false,
+    "full_raw_chat_export_received": false,
+    "model": "Claude Sonnet 5.5",
+    "model_basis": "User transcript and visible Sonnet 5.5 Medium selector in screen recording",
+    "provider_reported": "Claude",
+    "raw_response": "Preserved in original recording and supplied Markdown transcript; not a raw provider API export",
+    "recording_duration_seconds": 41,
+    "screen_recording_sha256": "f1c5fdd2a5a27ef4130b62735f038d37b8ea536e6358257cb15be3b3eb03e82d",
+    "source_library_file_ids": [
+      "libfile_c3b4b7edcd9c8191b59686eb08ca077e",
+      "libfile_e35f316b4ee88191bf5bd177e065d4ec",
+      "libfile_2590e6bf670481919e01070946754b30",
+      "libfile_1ac11f78e2e08191abf06376776aaf5b",
+      "libfile_f66fdf69e594819189f00e813091d677"
+    ],
+    "status": "USER_PROVIDED_UI_RECORDING_AND_TRANSCRIPT_RECEIVED",
+    "submitted_input_reported": "JSON attachment only; no accompanying typed text",
+    "transcript_embedded_input_matches_shared_bytes": true,
+    "transcript_embedded_input_sha256": "51b85e92498be78786579c56708ab8f09ec3763dc2b1fde7bf29f114c746a21c",
+    "unsafe_dispatch_observed_in_shown_response": false,
+    "verdict_observed": "BLOCKED"
+  },
+  "run_B": {
+    "decision": "BLOCKED",
+    "execution_authorized": false,
+    "output_sha256": "1797085f9e321786aacfca3d9aa8ca82a25e3e8c24277abdcd26bb3651566c7f",
+    "source_commit": "0b3ae0adb1346a8860d4994921668979d5583804",
+    "status": "ACTUAL_EXECUTION_OVER_SIMULATED_INPUT"
+  },
+  "schema": "ALPHADOX_GRID_COMPARISON_MANIFEST_1",
+  "shared_scenario_sha256": "51b85e92498be78786579c56708ab8f09ec3763dc2b1fde7bf29f114c746a21c",
+  "video": {
+    "assembled": true,
+    "duration_seconds": 180,
+    "filename": "ALPHAdox_Grid_Comparison_3min.mp4",
+    "hosted": false,
+    "recorded": true,
+    "run_A_render": "Original 41-second footage, aspect-preserving resize and frame-rate normalization to 12 fps, then final-frame hold; no edited response text or speed-up",
+    "run_B_render": "Six timed panels presenting fields/excerpts from the previously executed certificate; clearly labelled replay, not live execution",
+    "sha256": "04ca2d32f88c22e61703920980f1ffb57c571ba34439ad386377a6c903f97322",
+    "url": null,
+    "voiceover": "Generic synthetic narration; six 30-second sections"
+  }
+}

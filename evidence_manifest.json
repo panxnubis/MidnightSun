@@ -1,0 +1,22 @@
+{
+  "completed_video": {
+    "filename": "ALPHAdox_Grid_Comparison_3min.mp4",
+    "separately_delivered": true,
+    "sha256": "04ca2d32f88c22e61703920980f1ffb57c571ba34439ad386377a6c903f97322"
+  },
+  "files": {
+    "claude_baseline_observation.json": "75d4f69324f311738abb5247f78b5667a42f6d5ea636ce80d322969bf72b7597",
+    "comparison_manifest.json": "7240dbddaea333eaed0a2fd33929be83763d5a12cb930ecb7eceb06216dbe0ee",
+    "delivery_notes.md": "7a93ce9c5331891f51f473680637ae5c67e43cbe0af1a742fc99f8bcc455ea55",
+    "grid_dispatch_verdict_transcript.md": "d6a01e48543a60713b572032d007f6e501e0588e390f3472c1c275f0b5feb264",
+    "media_qa.json": "85c24e8a9fc58d2b00cda340dc0d988f15f41cbf0b64d7f0bda71ac252ce242b",
+    "narration.md": "142ae2b5e15b5e7dc8a55f7aff3ce9e4b15cbef72901c99fbfcfcf02feb3821c",
+    "sample_audit_certificate.json": "1797085f9e321786aacfca3d9aa8ca82a25e3e8c24277abdcd26bb3651566c7f",
+    "shared_scenario_input.json": "51b85e92498be78786579c56708ab8f09ec3763dc2b1fde7bf29f114c746a21c"
+  },
+  "run_A_original.mov": {
+    "library_file_id": "libfile_f66fdf69e594819189f00e813091d677",
+    "sha256": "f1c5fdd2a5a27ef4130b62735f038d37b8ea536e6358257cb15be3b3eb03e82d"
+  },
+  "schema": "ALPHADOX_GRID_MEDIA_EVIDENCE_BUNDLE_1"
+}

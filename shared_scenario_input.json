@@ -1,0 +1,81 @@
+{
+  "asset_id": "simulated-north-sea-export-link",
+  "decision_contract": {
+    "human_review_required_when_blocked": true,
+    "id": "MS-GRID-SIM-DISPATCH-001",
+    "maximum_age_seconds": 10,
+    "maximum_export_mw": 1200,
+    "required_safety_fields": [
+      "safety_verification.n_minus_one_verified"
+    ],
+    "schema_version": "1.0.0"
+  },
+  "evaluation_time_utc": "2026-11-18T20:00:00Z",
+  "prior_context": {
+    "case_id": "GRID-FUNDING-DEMO-01",
+    "query": [
+      "simulated-north-sea-export-link",
+      "capacity_allows",
+      "1250_MW",
+      "+"
+    ],
+    "records": [
+      {
+        "id": "SCADA_CAPACITY_ASSERTION",
+        "literal": [
+          "simulated-north-sea-export-link",
+          "capacity_allows",
+          "1250_MW",
+          "+"
+        ],
+        "origin": "INTERNAL_HYPOTHETICAL",
+        "source_ref": "simulation:scada-capacity-assessment"
+      }
+    ],
+    "rules": [],
+    "schema": "ALPHADOX_P36_SIGNED_1"
+  },
+  "proposed_dispatch_mw": 1250,
+  "receipt_selection": "prior",
+  "safety_verification": {},
+  "scenario_id": "GRID-FUNDING-DEMO-01",
+  "schema": "ALPHADOX_GRID_DEMO_INPUT_1",
+  "selected_receipt_issued_at_utc": "2026-11-18T19:59:30Z",
+  "simulation": true,
+  "telemetry_time_utc": "2026-11-18T19:59:30Z",
+  "updated_context": {
+    "case_id": "GRID-FUNDING-DEMO-01",
+    "query": [
+      "simulated-north-sea-export-link",
+      "capacity_allows",
+      "1250_MW",
+      "+"
+    ],
+    "records": [
+      {
+        "id": "SCADA_CAPACITY_ASSERTION",
+        "literal": [
+          "simulated-north-sea-export-link",
+          "capacity_allows",
+          "1250_MW",
+          "+"
+        ],
+        "origin": "INTERNAL_HYPOTHETICAL",
+        "source_ref": "simulation:scada-capacity-assessment"
+      },
+      {
+        "id": "PHASE_B_OPPOSING_ASSESSMENT",
+        "literal": [
+          "simulated-north-sea-export-link",
+          "capacity_allows",
+          "1250_MW",
+          "-"
+        ],
+        "origin": "INTERNAL_HYPOTHETICAL",
+        "source_ref": "simulation:phase-b-thermal-assessment"
+      }
+    ],
+    "rules": [],
+    "schema": "ALPHADOX_P36_SIGNED_1"
+  }
+}

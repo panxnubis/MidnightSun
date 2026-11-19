@@ -1,0 +1,159 @@
+{
+  "blocking_conditions": [
+    "CONTRADICTORY_SUPPORT",
+    "STALE_RECEIPT",
+    "TELEMETRY_EXPIRED",
+    "RECEIPT_TIMESTAMP_EXPIRED",
+    "MISSING_SAFETY_VERIFICATION",
+    "SUPPLIED_EXPORT_CAP_EXCEEDED"
+  ],
+  "contradiction": {
+    "averaging_performed": false,
+    "both_opposing_proofs_retained": true,
+    "kernel_status": "CONFLICTING",
+    "opposite_proof_id": "10b375fb4d2b4611e52f49be6c4c56551bd7da01262ed2e9ffe3d57f7da78845",
+    "opposite_supported": true,
+    "proof_nodes": {
+      "10b375fb4d2b4611e52f49be6c4c56551bd7da01262ed2e9ffe3d57f7da78845": {
+        "kind": "ADMITTED_RECORDS",
+        "literal": [
+          "simulated-north-sea-export-link",
+          "capacity_allows",
+          "1250_MW",
+          "-"
+        ],
+        "record_ids": [
+          "PHASE_B_OPPOSING_ASSESSMENT"
+        ]
+      },
+      "ecd83fe0bf77c6941137ca11ccae0dcdf73174b38ddaffa5f39077748685bc88": {
+        "kind": "ADMITTED_RECORDS",
+        "literal": [
+          "simulated-north-sea-export-link",
+          "capacity_allows",
+          "1250_MW",
+          "+"
+        ],
+        "record_ids": [
+          "SCADA_CAPACITY_ASSERTION"
+        ]
+      }
+    },
+    "query_proof_id": "ecd83fe0bf77c6941137ca11ccae0dcdf73174b38ddaffa5f39077748685bc88",
+    "query_supported": true,
+    "source_truth_authenticated": false,
+    "supplied_assertions": [
+      {
+        "id": "PHASE_B_OPPOSING_ASSESSMENT",
+        "literal": [
+          "simulated-north-sea-export-link",
+          "capacity_allows",
+          "1250_MW",
+          "-"
+        ],
+        "origin": "INTERNAL_HYPOTHETICAL",
+        "source_ref": "simulation:phase-b-thermal-assessment"
+      },
+      {
+        "id": "SCADA_CAPACITY_ASSERTION",
+        "literal": [
+          "simulated-north-sea-export-link",
+          "capacity_allows",
+          "1250_MW",
+          "+"
+        ],
+        "origin": "INTERNAL_HYPOTHETICAL",
+        "source_ref": "simulation:scada-capacity-assessment"
+      }
+    ]
+  },
+  "decision_contract_id": "MS-GRID-SIM-DISPATCH-001",
+  "decision_contract_schema_version": "1.0.0",
+  "decision_contract_sha256": "f7783a733ccfb5ca41fbd5c95f001759e2c28523d1994c68df7604586ba29fd7",
+  "decision_status": "BLOCKED",
+  "dispatch_limit": {
+    "basis": "SUPPLIED_SCENARIO_CONSTRAINT_NOT_A_THERMAL_ENGINEERING_MODEL",
+    "requested_mw": 1250,
+    "supplied_export_cap_mw": 1200,
+    "within_supplied_cap": false
+  },
+  "eligibility_promotion_allowed": false,
+  "eu_ai_act_conformity_established": false,
+  "execution_authorized": false,
+  "freshness": {
+    "basis": "SUPPLIED_UNPROTECTED_SIMULATION_CLOCK",
+    "evaluation_time_utc": "2026-11-18T20:00:00Z",
+    "maximum_age_seconds": 10,
+    "receipt_timestamp": {
+      "age_seconds": 30,
+      "eligible": false,
+      "status": "EXPIRED",
+      "timestamp_utc": "2026-11-18T19:59:30Z"
+    },
+    "telemetry": {
+      "age_seconds": 30,
+      "eligible": false,
+      "status": "EXPIRED",
+      "timestamp_utc": "2026-11-18T19:59:30Z"
+    },
+    "timestamp_authentication_established": false
+  },
+  "human_oversight_required": true,
+  "human_review_can_override_failed_contract": false,
+  "human_review_recorded": false,
+  "missing_evidence": [
+    "safety_verification.n_minus_one_verified"
+  ],
+  "provenance": {
+    "actual_adapter_execution": true,
+    "baseline_run_A": "NOT_RUN",
+    "comparison_advantage_established": false,
+    "independent_validation": false,
+    "input_kind": "INTERNAL_SYNTHETIC_SIMULATION",
+    "real_grid_operation": false
+  },
+  "receipt_verification": {
+    "basis": "EXACT_REGISTERED_BYTES_AND_CURRENT_KERNEL_ANCHORS",
+    "cryptographic_origin_authenticated": false,
+    "kernel_use_check": {
+      "execution_authorized": false,
+      "reason": "STALE_RECEIPT",
+      "schema": "ALPHADOX_P38_USE_CHECK_1",
+      "support_use_eligible": false,
+      "validation_label": "internally validated"
+    },
+    "selected_receipt": {
+      "anchors": {
+        "case_id": "GRID-FUNDING-DEMO-01",
+        "context_sha256": "5a18c1812cc719dc0367c8155864f1cf54a34196e094050ed300a18c5384dc0d",
+        "policy_sha256": "4a28ee5e4929a16d80581c3d1ae2cc6e2d7fef9e79996d8a87a8889bcf1df548",
+        "revision": 0
+      },
+      "base_status": "SUPPORTED",
+      "consumer_id": "GRID-DEMO-REGISTERED-RECEIPT",
+      "execution_authorized": false,
+      "packet_status": "VERIFIED",
+      "reason": "ELIGIBLE_UNDER_DECLARED_SUPPORT_USE",
+      "receipt_id": "GRID-DEMO-REGISTERED-RECEIPT:1",
+      "review_sha256": "7b3cd262c692c88810a0e6339b18b2f285c13457ebf59d7250ea800b80b4f2a1",
+      "review_status": "NO_CONFLICT_EXPOSURE_DETECTED",
+      "schema": "ALPHADOX_P38_RECEIPT_1",
+      "support_use_eligible": true,
+      "validation_label": "internally validated"
+    }
+  },
+  "safety_verification": {
+    "engineering_validity_established": false,
+    "required_fields": [
+      "safety_verification.n_minus_one_verified"
+    ],
+    "status": "MISSING",
+    "unresolved_fields": [
+      "safety_verification.n_minus_one_verified"
+    ]
+  },
+  "scenario_id": "GRID-FUNDING-DEMO-01",
+  "schema": "ALPHADOX_GRID_AUDIT_PACKET_1",
+  "shared_input_sha256": "51b85e92498be78786579c56708ab8f09ec3763dc2b1fde7bf29f114c746a21c",
+  "validation_label": "internally validated simulation adapter"
+}
